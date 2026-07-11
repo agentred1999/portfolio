@@ -1,3 +1,16 @@
+console.log(
+  "%c> whoami",
+  "color: #00ff41; font-family: monospace; font-size: 14px;"
+);
+console.log(
+  "%crichard_dean",
+  "color: #00d4ff; font-family: monospace; font-size: 14px;"
+);
+console.log(
+  "%cLooking for something? There's a classic cheat code hidden on this page. You know the one.",
+  "color: #a0a0ff; font-family: monospace; font-size: 12px;"
+);
+
 // Matrix Rain Animation
 // Uses configuration from MATRIX_CONFIG (see js/rain-config.js)
 

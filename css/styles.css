@@ -1547,3 +1547,19 @@ button:focus-visible,
     color: var(--primary-color);
     border-bottom-color: rgba(58, 110, 165, 0.25);
 }
+
+/* ===== Easter egg hint dot ===== */
+.egg-hint {
+    display: inline-block;
+    font-size: 0.6rem;
+    color: #00ff41;
+    opacity: 0.4;
+    cursor: help;
+    animation: hint-pulse 3s ease-in-out infinite;
+    margin-top: 0.5rem;
+}
+
+@keyframes hint-pulse {
+    0%, 100% { opacity: 0.2; }
+    50% { opacity: 0.6; }
+}
