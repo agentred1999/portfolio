@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Richard Dean | Full-Stack Developer</title>
+    <meta name="description" content="Richard Dean - Full-Stack Developer and Cybersecurity Enthusiast. Explore my projects and get in touch.">
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Richard Dean | Full-Stack Developer">
+    <meta property="og:description" content="Full-Stack Developer and Cybersecurity Enthusiast. Explore my projects and get in touch.">
+    <meta property="og:image" content="assets/images/pose.jpg">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Richard Dean | Full-Stack Developer">
+    <meta name="twitter:description" content="Full-Stack Developer and Cybersecurity Enthusiast. Explore my projects and get in touch.">
+    <meta name="twitter:image" content="assets/images/pose.jpg">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%230a0a2e'/%3E%3Ctext x='50' y='66' font-family='Courier New, monospace' font-size='44' font-weight='bold' fill='%2300d4ff' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Matrix Rain Canvas -->
+    <canvas id="matrixCanvas"></canvas>
+    <div class="theme-flash" id="themeFlash"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
+    <div class="easter-egg-overlay" id="easterEgg">
+        <div class="easter-egg-content">
+            <span class="egg-title">SYSTEM ACCESS GRANTED</span>
+            <pre class="egg-terminal">&gt; whoami
+richard_dean
+&gt; access_level: 1337
+&gt; status: "if you can read this, you're in the wrong cyberspace"
+&gt; mission: build cool stuff, break nothing important</pre>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="container">
+                <div class="nav-wrapper">
+                    <div class="logo">
+                        <a href="#home">Portfolio</a>
+                    </div>
+                    <ul class="nav-menu">
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <div class="nav-icons">
+                        <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode">
+                            <span class="toggle-icon">🌙</span>
+                        </button>
+                    </div>
+                    <div class="hamburger" role="button" tabindex="0" aria-label="Toggle mobile menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Hi, I'm <span>Richard Dean</span><span class="blink-cursor">_</span></h1>
+            <p class="hero-tagline">Full-Stack Developer &middot; Cybersecurity Enthusiast &middot; Open Source Contributor</p>
+            <p class="hero-subtitle">Building fast, secure, accessible web applications.</p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="https://github.com/agentred1999" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">GitHub</a>
+                <a href="assets/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">Resume</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <div class="id-card">
+                <img src="assets/images/hiking.jpg" alt="Richard Dean" class="id-card-photo">
+                <div class="id-card-strip">
+                    <span>Ubuntu</span>
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Linux</span>
+                    <span>Python</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-wrapper reveal-on-scroll">
+                <div class="about-image">
+                    <img src="assets/images/pose.jpg" alt="Richard Dean" class="placeholder-avatar">
+                </div>
+                <div class="about-content">
+                    <h2>Who I Am</h2>
+                    <p class="about-bio">Creative and self-driven aspiring software developer with hands-on experience in front-end web development, cybersecurity fundamentals, Linux, Git/GitHub, responsive web design, HTML5, CSS3, JavaScript, Python, and basic networking. Passionate about solving technical problems, building interactive web applications, and continuously expanding skills through personal projects and intensive self-directed learning, with a strong commitment to growing into a professional software engineering or cybersecurity role.</p>
+                    
+                    <div class="skills-section">
+                        <h3>Technical Skills</h3>
+                                                <div class="skill-category">
+                            <h4 class="skill-category-title">Languages &amp; Core</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">HTML5</span>
+                            <span class="skill-badge">CSS3</span>
+                            <span class="skill-badge">JavaScript (ES6+)</span>
+                            <span class="skill-badge">Python</span>
+                            <span class="skill-badge">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Frontend Development</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">Responsive Web Design</span>
+                            <span class="skill-badge">Mobile-First Design</span>
+                            <span class="skill-badge">Flexbox</span>
+                            <span class="skill-badge">CSS Grid</span>
+                            <span class="skill-badge">DOM Manipulation</span>
+                            <span class="skill-badge">Event Handling</span>
+                            <span class="skill-badge">Forms and Validation</span>
+                            <span class="skill-badge">Fetch API</span>
+                            <span class="skill-badge">REST APIs</span>
+                            <span class="skill-badge">JSON</span>
+                            <span class="skill-badge">HTTP</span>
+                            <span class="skill-badge">HTTPS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Tools &amp; Workflow</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">Git</span>
+                            <span class="skill-badge">GitHub</span>
+                            <span class="skill-badge">GitHub Pages</span>
+                            <span class="skill-badge">Visual Studio Code</span>
+                            <span class="skill-badge">Debugging</span>
+                            <span class="skill-badge">Browser Developer Tools</span>
+                            <span class="skill-badge">Cross-Browser Compatibility</span>
+                            <span class="skill-badge">Website Deployment</span>
+                            <span class="skill-badge">Static Website Hosting</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Linux &amp; Systems</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">Ubuntu Linux</span>
+                            <span class="skill-badge">Linux</span>
+                            <span class="skill-badge">Bash</span>
+                            <span class="skill-badge">Linux Command Line</span>
+                            <span class="skill-badge">Shell Scripting</span>
+                            <span class="skill-badge">APT Package Management</span>
+                            <span class="skill-badge">Python Virtual Environments</span>
+                            <span class="skill-badge">pip</span>
+                            <span class="skill-badge">System Administration</span>
+                            <span class="skill-badge">Package Management</span>
+                            <span class="skill-badge">VirtualBox</span>
+                            <span class="skill-badge">Virtual Machines</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Networking &amp; Security</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">Networking</span>
+                            <span class="skill-badge">TCP/IP</span>
+                            <span class="skill-badge">DNS</span>
+                            <span class="skill-badge">DHCP</span>
+                            <span class="skill-badge">IP Addressing</span>
+                            <span class="skill-badge">Routing Fundamentals</span>
+                            <span class="skill-badge">Cybersecurity Fundamentals</span>
+                            <span class="skill-badge">Linux Security</span>
+                            <span class="skill-badge">Security Awareness</span>
+                            <span class="skill-badge">Penetration Testing Concepts</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Specialized Projects</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">OpenStreetMap (OSM)</span>
+                            <span class="skill-badge">GPS</span>
+                            <span class="skill-badge">GPSD</span>
+                            <span class="skill-badge">Navit</span>
+                            <span class="skill-badge">OSMnx</span>
+                            <span class="skill-badge">NetworkX</span>
+                            <span class="skill-badge">Pygame</span>
+                            <span class="skill-badge">GIS</span>
+                            <span class="skill-badge">Offline Mapping</span>
+                            <span class="skill-badge">Route Planning</span>
+                            <span class="skill-badge">Python Automation</span>
+                            <span class="skill-badge">Raspberry Pi</span>
+                            <span class="skill-badge">Meshtastic</span>
+                            <span class="skill-badge">Serial Communication</span>
+                            <span class="skill-badge">USB Device Management</span>
+                            <span class="skill-badge">Local LLMs</span>
+                            <span class="skill-badge">Ollama</span>
+                            <span class="skill-badge">AI Development Tools</span>
+                            <span class="skill-badge">Prompt Engineering</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4 class="skill-category-title">Practices</h4>
+                            <div class="skills-grid">
+                            <span class="skill-badge">Technical Troubleshooting</span>
+                            <span class="skill-badge">Documentation</span>
+                            <span class="skill-badge">Problem Solving</span>
+                            <span class="skill-badge">Independent Project Development</span>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Things I've Built</h2>
+                <p>A showcase of my recent work and achievements</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder placeholder-nft"><span class="placeholder-icon">◆</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>NFT Marketplace</h3>
+                        <p>An internship project featuring a full NFT marketplace UI with countdown timers, author profiles, and shimmer skeleton loading states.</p>
+                        
+                        <a href="https://agentred1999.github.io/agentred1999-internship/#/" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder placeholder-wing"><span class="placeholder-icon">▲</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>1337 Wing</h3>
+                        <p>A cybersecurity-themed e-commerce brand selling pentesting hardware and hacker merchandise, with a live HackerNews intel feed and full cart system.</p>
+                        
+                        <a href="https://agentred1999.github.io/1337-Wing/" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="placeholder placeholder-template"><span class="placeholder-icon">◈</span></div>
+                    </div>
+                    <div class="project-content">
+                        <h3>React Template</h3>
+                        <p>A reusable, customizable React project template built for quickly scaffolding new frontend applications.</p>
+                        
+                        <a href="https://agentred1999.github.io/project-FS/" target="_blank" rel="noopener noreferrer" class="project-link">View Project →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content reveal-on-scroll">
+                <div class="footer-section">
+                    <h4>Richard Dean</h4>
+                    <p>Fullstack Developer crafting beautiful digital experiences with passion and precision.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect With Me</h4>
+                    <ul>
+                        <li><a href="https://github.com/agentred1999" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg><span>GitHub</span></a></li>
+                        <li><a href="www.linkedin.com/in/richard-d-93274525a" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile" class="social-link"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg><span>LinkedIn</span></a></li>
+                    </ul>
+                </div>
+                <div class="footer-section" id="contact">
+                    <h4>Get In Touch</h4>
+                    <p>Email: redhat1999@mailfence.com</p>
+                    <p>Ready to collaborate or discuss opportunities.</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Richard Dean. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/rain-config.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
